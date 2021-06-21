@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".Fragment3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="걸음 수 측정"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.119"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="341dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="48dp"
+            android:text="시작하기"
+            app:layout_constraintEnd_toEndOf="@+id/textView41"
+            app:layout_constraintStart_toStartOf="@+id/textView41"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="341dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/parkwalk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView333"
+            android:layout_width="343dp"
+            android:layout_height="38dp"
+            android:layout_margin="15dp"
+            android:text="우리 함께 걸어요!"
+            android:textAlignment="center"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView10"
+            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="343dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:text="그린숲 시민공원과 함께 하는 즐거운 산책\n건강한 몸을 위해 만보를 채워보세요"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView333"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="@+id/textView333"
+            app:layout_constraintTop_toBottomOf="@+id/textView333" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

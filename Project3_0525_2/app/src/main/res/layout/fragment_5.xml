@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment1" >
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="341dp"
+                android:layout_height="371dp"
+                android:src="@drawable/map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:layout_constraintVertical_bias="0.032" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="스마트 벤치"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.108"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="그린숲 시민공원의 특별한 스마트 벤치에서\n음성인식을 통한 사용자 맞춤형 음악을 감상해보세요"
+                android:textSize="15.5dp"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <Button
+                android:id="@+id/btn_bench1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="56dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+            <Button
+                android:id="@+id/btn_bench2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="112dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+            <Button
+                android:id="@+id/btn_bench3"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="216dp"
+                android:layout_marginEnd="96dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+            <Button
+                android:id="@+id/btn_bench4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginBottom="60dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintStart_toStartOf="@+id/imageView6" />
+
+            <Button
+                android:id="@+id/btn_bench5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="188dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+            <TextView
+                android:id="@+id/tv_available"
+                android:layout_width="317dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="사용하실 벤치를 선택해주세요"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            <ImageView
+                android:id="@+id/iv_Off1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="68dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_bench1"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_bench1"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                app:srcCompat="@drawable/point01" />
+
+            <ImageView
+                android:id="@+id/iv_Off2"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="92dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_bench2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_bench2"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                app:srcCompat="@drawable/point01" />
+
+            <ImageView
+                android:id="@+id/iv_Off4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="84dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintEnd_toEndOf="@+id/btn_bench4"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_bench4"
+                app:srcCompat="@drawable/point01" />
+
+            <ImageView
+                android:id="@+id/iv_Off5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="176dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_bench5"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_bench5"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                app:srcCompat="@drawable/point01" />
+
+            <ImageView
+                android:id="@+id/iv_Off3"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="160dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintEnd_toEndOf="@+id/btn_bench3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_bench3"
+                app:srcCompat="@drawable/point01" />
+
+            <ImageView
+                android:id="@+id/iv_On1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="68dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_bench1"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_bench1"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                app:srcCompat="@drawable/point02" />
+
+            <ImageView
+                android:id="@+id/iv_On2"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="92dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_bench2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_bench2"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                app:srcCompat="@drawable/point02" />
+
+            <ImageView
+                android:id="@+id/iv_On4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="84dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintEnd_toEndOf="@+id/btn_bench4"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_bench4"
+                app:srcCompat="@drawable/point02" />
+
+            <ImageView
+                android:id="@+id/iv_On5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="176dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_bench5"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_bench5"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                app:srcCompat="@drawable/point02" />
+
+            <ImageView
+                android:id="@+id/iv_On3"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="160dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintEnd_toEndOf="@+id/btn_bench3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_bench3"
+                app:srcCompat="@drawable/point02" />
+
+            <Button
+                android:id="@+id/btn_voice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="음성인식"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/tv_available"
+                app:layout_constraintStart_toStartOf="@+id/tv_available"
+                app:layout_constraintTop_toBottomOf="@+id/tv_available" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

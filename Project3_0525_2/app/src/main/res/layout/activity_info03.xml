@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity03">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#5DD17B"
+        android:contextClickable="false"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="자원 봉사"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="276dp"
+                android:layout_height="91dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/notosans_regular"
+                android:gravity="center"
+                android:text="지구도 건강하게! 우리 몸도 건강하게!\n푸른 공원을 여유롭게 즐기면서\n환경도 지키는 활동에 함께해주세요"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView41"
+                app:layout_constraintStart_toStartOf="@+id/textView41"
+                app:layout_constraintTop_toBottomOf="@+id/textView41"
+                app:theme="@style/ThemeOverlay.AppCompat" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="당신과 함께 자랍니다"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView5"
+                app:layout_constraintHorizontal_bias="0.536"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosans_regular"
+                android:gravity="left"
+                android:text="2021.05.31 (10:00-17:00)\n앱 하단 지원 폼 작성\n관심있는 시민 누구나\n1일 1인 1시간"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                app:layout_constraintStart_toEndOf="@+id/textView7"
+                app:layout_constraintTop_toTopOf="@+id/textView7"
+                app:layout_constraintVertical_bias="0.0"
+                app:theme="@style/ThemeOverlay.AppCompat" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/notosans_regular"
+                android:gravity="left"
+                android:text="- 운영일정 :\n- 신청방법 :\n- 신청대상 :\n- 봉사시간 :"
+                android:textColor="#46B362"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:theme="@style/ThemeOverlay.AppCompat" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="은"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="314dp"
+                android:layout_height="37dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:inputType="textNoSuggestions"
+                app:layout_constraintEnd_toEndOf="@+id/tv_name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/notosans_bold"
+                android:text="이메일"
+                android:textColor="#46B362"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_phone"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_phone"
+                app:layout_constraintTop_toBottomOf="@+id/et_phone" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="314dp"
+                android:layout_height="37dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:inputType="textNoSuggestions"
+                app:layout_constraintEnd_toEndOf="@+id/tv_phone"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_phone"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/notosans_bold"
+                android:text="연락처"
+                android:textColor="#46B362"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_name"
+                app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="314dp"
+                android:layout_height="37dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:inputType="textNoSuggestions"
+                app:layout_constraintEnd_toEndOf="@+id/tv_email"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_email"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/notosans_bold"
+                android:text="개인/단체명"
+                android:textColor="#46B362"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintHorizontal_bias="0.059"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="284dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gmarket_bold"
+                android:gravity="right"
+                android:text="그린숲 시민공원"
+                android:textColor="#5DD17B"
+                android:textSize="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:gravity="center"
+                android:text="자원 봉사 신청"
+                android:textSize="36dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="314dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="80dp"
+                android:text="신청하기"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/et_email"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="@+id/et_email"
+                app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="305dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/activity03" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="그린숲 자원봉사활동은"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView16"
+                app:layout_constraintHorizontal_bias="0.468"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="함께하는 모든 주체를 이롭게 하는\n공익적 활동이기를 바랍니다"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/textView14"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

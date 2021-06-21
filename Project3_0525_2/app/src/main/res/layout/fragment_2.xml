@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".Fragment4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_piano1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="분수 피아노"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.119"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_piano2"
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="피아노 건반을 밟아 노래를 연주해보세요\n혼자부터 셋까지 함께 즐길 수 있어요"
+            android:textAlignment="gravity"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_piano1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="34dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="280dp" />
+
+        <ImageButton
+            android:id="@+id/btn_solo"
+            android:layout_width="341dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            android:src="@drawable/btnsolo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <ImageButton
+            android:id="@+id/btn_duo"
+            android:layout_width="341dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            android:src="@drawable/btnduo"
+            app:layout_constraintEnd_toEndOf="@+id/btn_solo"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/btn_solo" />
+
+        <ImageButton
+            android:id="@+id/btn_trio"
+            android:layout_width="341dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            android:src="@drawable/btntrio"
+            app:layout_constraintEnd_toEndOf="@+id/btn_duo"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/btn_duo" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/pianoimg"
+            app:layout_constraintEnd_toEndOf="@+id/tv_piano2"
+            app:layout_constraintStart_toStartOf="@+id/tv_piano2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_piano2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

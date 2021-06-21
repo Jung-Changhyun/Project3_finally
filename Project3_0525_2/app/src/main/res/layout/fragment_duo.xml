@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_duo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DuoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_piano4"
+            android:layout_width="343dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="연주할 노래를 선택해주세요"
+            android:textAlignment="gravity"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView99" />
+
+        <ImageView
+            android:id="@+id/imageView99"
+            android:layout_width="145dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/playduo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.127"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_piano4">
+
+            <ImageButton
+                android:id="@+id/btn_duo_1"
+                android:layout_width="412dp"
+                android:layout_height="85dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/duo01" />
+
+            <ImageButton
+                android:id="@+id/btn_duo_2"
+                android:layout_width="412dp"
+                android:layout_height="85dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/duo02" />
+
+            <ImageButton
+                android:id="@+id/btn_duo_3"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/duo03" />
+
+            <ImageButton
+                android:id="@+id/btn_duo_4"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/duo04" />
+
+            <ImageButton
+                android:id="@+id/btn_duo_5"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/duo05" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

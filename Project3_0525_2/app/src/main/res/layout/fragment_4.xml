@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".Fragment4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_ar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="AR 꽃밭 가꾸기"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.132"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_ar"
+            android:layout_width="341dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:text="시작하기"
+            app:layout_constraintEnd_toEndOf="@+id/tv_ar3"
+            app:layout_constraintStart_toStartOf="@+id/tv_ar3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ar3" />
+
+        <ImageView
+            android:id="@+id/imageView101"
+            android:layout_width="341dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/arplant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ar1" />
+
+        <TextView
+            android:id="@+id/tv_ar2"
+            android:layout_width="343dp"
+            android:layout_height="38dp"
+            android:layout_margin="15dp"
+            android:text="꽃밭에 물을 주세요"
+            android:textAlignment="center"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView101"
+            app:layout_constraintStart_toStartOf="@+id/imageView101"
+            app:layout_constraintTop_toBottomOf="@+id/imageView101" />
+
+        <TextView
+            android:id="@+id/tv_ar3"
+            android:layout_width="343dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="8dp"
+            android:text="증강현실(AR)을 통해 토양 습도를 확인하고\n목마른 꽃들에게 직접 물을 줄 수 있어요\n\n먼저 물을 주고싶은 꽃의 QR코드를 인식해주세요"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_ar2"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="@+id/tv_ar2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ar2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="34dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="427dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
